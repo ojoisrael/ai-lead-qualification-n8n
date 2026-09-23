@@ -57,3 +57,7 @@ More automation work:
 
 - Portfolio: https://ojo-israel-portfolio.lovable.app
 - LinkedIn: https://www.linkedin.com/in/ojo-israel-ai-and-workflow-automation
+
+---
+
+**Built by Ojo Israel — AI & Workflow Automation Specialist**
