@@ -4,7 +4,9 @@ An n8n workflow that captures new enquiries, updates HubSpot, uses Gemini AI to 
 
 ## Workflow
 
-![Lead Qualification Workflow](screenshots/lead-qualification-workflow.jpg)
+![AI Lead Qualification n8n Workflow](screenshots/ai-lead-qualification-n8n.png)
+
+The workflow shown above demonstrates the end-to-end routing from enquiry capture through AI analysis, lead classification, and automated follow-up.
 
 ## What it does
 
@@ -17,9 +19,22 @@ An n8n workflow that captures new enquiries, updates HubSpot, uses Gemini AI to 
 - Places Cold leads into a nurture path
 - Reduces manual CRM updates and repetitive follow-up work
 
-## Architecture
+## Workflow architecture
 
-Tally → HubSpot → Gemini AI → JavaScript parsing → Lead classification → Follow-up path
+```
+Tally
+  ↓
+HubSpot: Create or Update Contact
+  ↓
+Gemini AI: Lead Analysis
+  ↓
+JavaScript: Parse AI Output
+  ↓
+Switch: Hot / Warm / Cold
+  ├── Hot  → Immediate Gmail notification
+  ├── Warm → Wait → Follow-up email
+  └── Cold → Nurture email path
+```
 
 ## Tech stack
 
@@ -37,7 +52,7 @@ workflow/
   lead-qualification.json
 
 screenshots/
-  lead-qualification-workflow.jpg
+  ai-lead-qualification-n8n.png
 
 docs/
   architecture.md
@@ -49,9 +64,15 @@ SECURITY.md
 
 The workflow JSON in this repository is sanitized for portfolio sharing. Credentials, webhook identifiers, internal workflow metadata, and private connection details have been removed or replaced with placeholders.
 
+## Why this automation matters
+
+Lead enquiries can require several manual steps before a sales team can act on them. This workflow connects those steps so incoming leads can be captured, enriched, classified, and routed automatically.
+
+The Hot, Warm, and Cold paths demonstrate how different lead priorities can trigger different follow-up actions without requiring every enquiry to be handled manually.
+
 ## About
 
-Built as an example of how AI and workflow automation can help sales teams respond faster, keep CRM data organized, and prioritize incoming opportunities.
+Built as a portfolio example of AI and workflow automation for lead management, CRM operations, and sales follow-up.
 
 More automation work:
 
