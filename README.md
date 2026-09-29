@@ -77,7 +77,7 @@ Built as a portfolio example of AI and workflow automation for lead management, 
 More automation work:
 
 - Portfolio: https://ojo-israel-portfolio.lovable.app
-- LinkedIn: https://www.linkedin.com/in/ojo-israel-ai-and-workflow-automation
+- LinkedIn: https://www.linkedin.com/in/israel-ojo-514661394
 
 ---
 
