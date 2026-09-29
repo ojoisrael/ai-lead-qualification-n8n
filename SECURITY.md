@@ -18,10 +18,19 @@ Do not include secrets or private customer data in reports.
 
 ## Credential and Secret Handling
 
-Never commit API keys, access tokens, passwords, webhook secrets, database credentials, or private customer data.
+Never commit:
+
+- API keys
+- Access tokens
+- Passwords
+- Webhook secrets
+- Database credentials
+- Private customer data
 
 Use n8n's credential manager or environment variables for sensitive values.
 
 ## Public Workflow
 
-The workflow is sanitized for public portfolio sharing and uses placeholders rather than live connection details.
+The workflow JSON is sanitized for portfolio sharing. Credentials, webhook identifiers, internal workflow metadata, and private connection details have been removed or replaced with placeholders.
+
+The public workflow should be treated as a portfolio example. Reconnect services and review all expressions before using it in a live environment.
