@@ -62,7 +62,7 @@ SECURITY.md
 
 ## Public workflow
 
-The workflow JSON in this repository is sanitized for portfolio sharing. Credentials, webhook identifiers, internal workflow metadata, and private connection details have been removed or replaced with placeholders.
+The workflow JSON in this repository is the sanitized portfolio version of the n8n workflow. Credentials, webhook identifiers, internal workflow metadata, and private connection details have been removed or replaced with placeholders. Reconnect the required services and replace the Tally form placeholder before using it in a live n8n instance.
 
 ## Why this automation matters
 
